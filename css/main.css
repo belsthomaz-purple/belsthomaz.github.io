@@ -1,0 +1,42 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  background-image: url('../images/bg_image.jpg');
+  background-repeat: no-repeat, repeat;
+}
+
+main {
+  margin-top: 1.5rem;
+  padding: .5rem;
+  background-color: #343a40;
+  color: #DCDCDC;
+
+}
+
+footer {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #343a40;
+  color: #DCDCDC;
+  text-align: center;
+}
+
+#welcomeDiv {
+  margin: .5rem;
+}
+
+.shadow {
+  box-shadow: 3px 3px 15px #101010;
+}
+.center {
+  text-align: center;
+}
+
+.not-center {
+  text-align: left;
+}
+
+.vertical-rule {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  height: auto;
+}
