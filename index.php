@@ -1,7 +1,7 @@
-
 <!doctype html>
 <html lang="en">
   <head>
+    <!--meta-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A test site used for learning.">
@@ -21,6 +21,7 @@
   </head>
 
   <body>
+    <!--nav-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="box-shadow: 3px 3px 15px #101010;">
       <div id="brand_button" class="navbar-brand">Bels Learning</div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +35,9 @@
           <li id="port_item" class="nav-item">
             <div id="port_button" class="nav-link">Portfolio</div>
           </li>
+          <li id="diss_item" class="nav-item">
+            <div id="diss_button" class="nav-link">Discussion</div>
+          </li>
           <li id="about_item" class="nav-item">
             <div id="about_button" class="nav-link">About</div>
           </li>
@@ -44,8 +48,10 @@
         <div id="logo_button"><img src="images/logo.png" alt="learn_logo" width="50px;" height="50px;"></a>
       </div>
     </nav>
+    <!--main-->
     <main role="main" class="container" style="box-shadow: 3px 3px 15px #101010;">
 			<div class="row">
+        <!--home-->
 				<div id="home" class="pane col-md-9">
 					<h1>Welcome to my learning site!</h1>
 					<hr>
@@ -57,6 +63,7 @@
 						</div>
 					</div>
       	</div>
+        <!--portfolio-->
         <div id="portfolio" class="pane col-md-9">
 					<h1>Portfolio</h1>
 					<hr>
@@ -67,6 +74,20 @@
 						</div>
 					</div>
 				</div>
+        <!--discussion-->
+        <div id="discussion" class="pane col-md-9">
+					<h1>Discussion Board</h1>
+					<hr>
+		      <div id="dissDiv" class="starter-template">
+						<div id="diss-body" class="not-center">
+              <!--reddit widget-->
+              <p class="lead">Here are some topics to help stir a discussion:</p>
+              <script src="https://www.reddit.com/hot/.embed?limit=5&t=all&bgcolor=282828" type="text/javascript"></script>
+              <!--discussion board-->
+						</div>
+					</div>
+				</div>
+        <!--about-->
 				<div id="about" class="pane col-md-9">
 					<h1>About The Author</h1>
 					<hr>
@@ -78,6 +99,7 @@
 						</div>
 					</div>
 				</div>
+        <!--contact-->
 				<div id="contact" class="pane col-md-9">
 					<h1>Contact</h1>
 					<hr>
@@ -106,18 +128,20 @@
 						</div>
 					</div>
 				</div>
+        <!--sidebar-->
 				<div id="info-sidebar" class="col-md-3 center vertical-rule">
 					<img src="images/logo.png" alt="info-logo" width="150px;" height="150px;">
 					<div id="sidebar-text">
 						<hr>
 						<h4>About</h4>
 						<hr>
-						<p class="not-center">A website dedicated to learn new things, present my projects, and to discuss cool and interesting topics. On occasion, shennanigans may occur.</p>
+						<p class="not-center">A website dedicated to learn new things, present my projects, and to discuss cool and interesting topics. On occasion, shenanigans may occur.</p>
 						<p class="not-center">Author: Bels Thomaz</p>
 					</div>
 				</div>
 			</div>
     </main>
+    <!--footer-->
 		<footer class="container" style="box-shadow: 3px 3px 15px #101010;">
 			<div id="footerDiv"><p>&copy; Bels Thomaz 2017</p></div>
 		</footer>
