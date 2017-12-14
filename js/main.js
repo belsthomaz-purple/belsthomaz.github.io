@@ -23,6 +23,12 @@ $(document).ready(function(){
     $('#port_item').addClass('active');
 		$('#portfolio').show();
 	});
+  $('#diss_button').on('click', function(){
+		$('.pane').hide();
+    $('.nav-item').removeClass('active');
+    $('#diss_item').addClass('active');
+		$('#discussion').show();
+	});
   $('#brand_button').on('click', function(){
 		$('.pane').hide();
     $('.nav-item').removeClass('active');
