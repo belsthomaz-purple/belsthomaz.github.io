@@ -15,7 +15,6 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="bootstrap-social-gh-pages/bootstrap-social.css">
-		<link rel="stylesheet" href="bootstrap-social-gh-pages/bootstrap-social.less">
 
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
@@ -31,6 +30,9 @@
         <ul class="navbar-nav mr-auto">
           <li id="home_item" class="nav-item">
             <div id="home_button" class="nav-link">Home</div>
+          </li>
+          <li id="port_item" class="nav-item">
+            <div id="port_button" class="nav-link">Portfolio</div>
           </li>
           <li id="about_item" class="nav-item">
             <div id="about_button" class="nav-link">About</div>
@@ -55,6 +57,16 @@
 						</div>
 					</div>
       	</div>
+        <div id="portfolio" class="pane col-md-9">
+					<h1>Portfolio</h1>
+					<hr>
+		      <div id="portDiv" class="starter-template">
+						<div id="port-body" class="not-center">
+							<p class="lead">Feel free to look through projects I've worked on and done.</p>
+							<p>[insert portfolio stuff here]</p>
+						</div>
+					</div>
+				</div>
 				<div id="about" class="pane col-md-9">
 					<h1>About The Author</h1>
 					<hr>
@@ -72,24 +84,21 @@
 		      <div id="aboutDiv" class="starter-template">
 						<div id="about-body" class="not-center">
 							<p class="lead">Had a question or comment? Send me an email!</p>
-							<form name="contact_form" action="contct-">
-  							<div class="form-group">
-									<div class="form-group">
-	    							<label for="name">Name</label>
-	    							<input type="text" class="form-control" id="name" placeholder="Name">
-	  							</div>
-    							<div class="form-group">
-										<label for="email">Email address</label>
-	    							<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-    							</div>
-									<div class="form-group">
-	    							<label for="name">Name</label>
-	    							<input type="text" class="form-control" id="name" placeholder="Name">
-	  							</div>
-    							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  							</div>
-  							<button type="submit" class="btn btn-primary">Submit</button>
-							</form>
+              <form class="form-group" id="form" method="post" action="api/send_contact_email.php">
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input class="form-control" type="text" name="email">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" name="subject" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea  id="message" name="message" class="form-control"></textarea>
+                </div>
+                <input type="submit" class="btn btn-primary">
+              </form>
 							<hr>
 							<p class="lead">You can also see other projects from me here:</p>
 							<p>Twitter: <a href="https://twitter.com/samwisethebravo" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a></p>

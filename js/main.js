@@ -1,3 +1,4 @@
+//pane changing
 $(document).ready(function(){
   $('.pane').hide();
 	$('#home').show();
@@ -15,6 +16,12 @@ $(document).ready(function(){
     $('.nav-item').removeClass('active');
     $('#home_item').addClass('active');
 		$('#home').show();
+	});
+  $('#port_button').on('click', function(){
+		$('.pane').hide();
+    $('.nav-item').removeClass('active');
+    $('#port_item').addClass('active');
+		$('#portfolio').show();
 	});
   $('#brand_button').on('click', function(){
 		$('.pane').hide();
