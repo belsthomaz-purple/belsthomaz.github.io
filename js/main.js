@@ -24,10 +24,7 @@ $(document).ready(function(){
 		$('#portfolio').show();
 	});
   $('#diss_button').on('click', function(){
-		$('.pane').hide();
-    $('.nav-item').removeClass('active');
-    $('#diss_item').addClass('active');
-		$('#discussion').show();
+		window.location = "http://projectlearn.freeforums.net/";
 	});
   $('#brand_button').on('click', function(){
 		$('.pane').hide();
