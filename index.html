@@ -3,7 +3,7 @@
   <head>
     <!--meta-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="A test site used for learning.">
     <meta name="author" content="Isabella Thomaz">
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -24,28 +24,27 @@
     <!--nav-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="box-shadow: 3px 3px 15px #101010;">
       <div id="brand_button" class="navbar-brand">Project Learn</div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><img src="images/logo.png" alt="learn_logo"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
           <li id="home_item" class="nav-item">
-            <div id="home_button" class="nav-link">Home</div>
+            <a href="#home" id="home_button" class="nav-link">Home</a>
           </li>
           <li id="port_item" class="nav-item">
-            <div id="port_button" class="nav-link">Portfolio</div>
+            <a href="#home" id="port_button" class="nav-link">Portfolio</a>
           </li>
           <li id="diss_item" class="nav-item">
-            <div id="diss_button" class="nav-link">Discussion</div>
+            <a href="#home" id="diss_button" class="nav-link">Discussion</a>
           </li>
           <li id="about_item" class="nav-item">
-            <div id="about_button" class="nav-link">About</div>
+            <div href="#home" id="about_button" class="nav-link">About</a>
           </li>
           <li id="contact_item" class="nav-item">
-            <div id="contact_button" class="nav-link">Contact</div>
+            <a href="#home" id="contact_button" class="nav-link">Contact</a>
           </li>
         </ul>
-        <div id="logo_button"><img src="images/logo.png" alt="learn_logo" width="50px;" height="50px;"></a>
       </div>
     </nav>
     <!--main-->
@@ -74,22 +73,22 @@
 						</div>
 					</div>
 				</div>
-        <!--discussion-->
+        <!--discussion
         <div id="discussion" class="pane col-md-9">
 					<h1>Discussion Board</h1>
 					<hr>
 		      <div id="dissDiv" class="starter-template">
 						<div id="diss-body" class="not-center">
-              <!--reddit widget-->
+              <!reddit widget-
               <p class="lead">Here are some topics from reddit to help stir a discussion:</p>
               <script src="https://www.reddit.com/hot/.embed?limit=5&t=all&bgcolor=282828" type="text/javascript"></script>
-              <!--discussion board-->
+              <!discussion board
               <br>
               <p>Currently I am unable to embed a forum on the website, but you can access one I created by pressing the button below.</p>
               <div class="btn btn-primary"><a style="text-decoration:none; color: #ffffff;" href="http://projectlearn.freeforums.net/">Project Learn Forum</a></div>
 						</div>
 					</div>
-				</div>
+				</div>-->
         <!--about-->
 				<div id="about" class="pane col-md-9">
 					<h1>About The Author</h1>
@@ -158,5 +157,7 @@
     <script src="js/npm.js"></script>
     <script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   </body>
 </html>
