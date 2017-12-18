@@ -10,7 +10,6 @@ main {
   padding: .5rem;
   background-color: #343a40;
   color: #DCDCDC;
-
 }
 
 footer {
@@ -39,4 +38,18 @@ footer {
 .vertical-rule {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .container {
+      max-width: 768px;
+    }
+
+    body {
+      width: 100%;
+    }
 }
