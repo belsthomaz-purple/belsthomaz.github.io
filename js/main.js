@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('#home').show();
   $('#home_item').addClass('active');
 
-	//show home
+  //show and hide panes
 	$('#home_button').on('click', function(){
 		$('.pane').hide();
     $('.nav-item').removeClass('active');
@@ -18,10 +18,11 @@ $(document).ready(function(){
 		$('#home').show();
 	});
   $('#port_button').on('click', function(){
-		$('.pane').hide();
-    $('.nav-item').removeClass('active');
-    $('#port_item').addClass('active');
-		$('#portfolio').show();
+    window.location = "http://belsthomaz.portfoliobox.net/";
+		//$('.pane').hide();
+    //$('.nav-item').removeClass('active');
+    //$('#port_item').addClass('active');
+		//$('#portfolio').show();
 	});
   $('#diss_button').on('click', function(){
 		window.location = "http://projectlearn.freeforums.net/";
@@ -32,14 +33,12 @@ $(document).ready(function(){
     $('#home_item').addClass('active');
 		$('#home').show();
 	});
-	//show link
 	$('#about_button').on('click', function(){
 		$('.pane').hide();
     $('.nav-item').removeClass('active');
     $('#about_item').addClass('active');
 		$('#about').show();
 	});
-	//show disabled
 	$('#contact_button').on('click', function(){
 		$('.pane').hide();
     $('.nav-item').removeClass('active');
