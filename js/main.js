@@ -11,12 +11,6 @@ $(document).ready(function(){
     $('#home_item').addClass('active');
 		$('#home').show();
 	});
-  $('#logo_button').on('click', function(){
-		$('.pane').hide();
-    $('.nav-item').removeClass('active');
-    $('#home_item').addClass('active');
-		$('#home').show();
-	});
   $('#port_button').on('click', function(){
     window.location = "http://belsthomaz.portfoliobox.net/";
 		//$('.pane').hide();
@@ -26,12 +20,6 @@ $(document).ready(function(){
 	});
   $('#diss_button').on('click', function(){
 		window.location = "http://projectlearn.freeforums.net/";
-	});
-  $('#brand_button').on('click', function(){
-		$('.pane').hide();
-    $('.nav-item').removeClass('active');
-    $('#home_item').addClass('active');
-		$('#home').show();
 	});
 	$('#about_button').on('click', function(){
 		$('.pane').hide();
